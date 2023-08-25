@@ -6,15 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
-    "build": "cd client && npm run build", 
+    "build": "cd client && npm run build",
     "start": "node server/server.js",
     "install": "cd server && npm i && cd ../client && npm i && npm i calendar"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.1"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.1"
   }
 }
