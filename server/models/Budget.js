@@ -1,3 +1,5 @@
+const { Schema, model } = require('mongoose');
+const billsSchema = require('../schemas/expenseSchema')
 const Budget = model('Budget', budgetSchema);
 
 module.exports = Budget;
@@ -9,7 +11,7 @@ const budgetSchema = new Schema({
     percision: 2,
     required: true,
   },
-  expenses: [expenseSchema], 
+  expenses: [billsSchema], 
 
 },
 {

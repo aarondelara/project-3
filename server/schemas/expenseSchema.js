@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const expenseSchema = new Schema({
+const billsSchema = new Schema({
   total: {
     type: Number,
     percision: 2,
@@ -11,9 +11,9 @@ const expenseSchema = new Schema({
     require: true,
   }
 },
-  {
+{
     timestamps: true
-  });
-//built like an array
-//
-module.exports = expenseSchema
+});
+
+
+module.exports = billsSchema
