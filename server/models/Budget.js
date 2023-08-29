@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+<<<<<<< HEAD
 const dateFormat = require('../utils/dateFormat');
 
 const budgetSchema = new Schema({
@@ -43,3 +44,23 @@ const budgetSchema = new Schema({
 const Budget = model('Budget', budgetSchema);
 
 module.exports = Budget;
+=======
+const expenseSchema = require('./expenseSchema')
+
+const budgetSchema = new Schema({
+  income: {
+    type: Number,
+    percision: 2,
+    required: true,
+  },
+  expenses: [expenseSchema], 
+
+},
+{
+    timestamps: true
+});
+
+const Budget = model("Budget", budgetSchema)
+
+module.exports = Budget
+>>>>>>> 59094b52bb43368dc5261d68c1c192c17de4aa6b
