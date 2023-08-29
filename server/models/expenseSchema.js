@@ -11,9 +11,9 @@ const expenseSchema = new Schema({
     require: true,
   }
 },
-{
+  {
     timestamps: true
-});
-
-
+  });
+//built like an array
+//
 module.exports = expenseSchema
