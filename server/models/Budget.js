@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const expenseSchema = require('./expenseSchema')
+const billsSchema = require('../schemas/expenseSchema')
 
 const budgetSchema = new Schema({
   income: {
@@ -7,7 +7,7 @@ const budgetSchema = new Schema({
     percision: 2,
     required: true,
   },
-  expenses: [expenseSchema], 
+  expenses: [billsSchema], 
 
 },
 {
