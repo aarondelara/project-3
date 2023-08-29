@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "project-3",
   "version": "1.0.0",
   "description": "",
@@ -19,7 +18,6 @@
   },
   "dependencies": {
     "jsonwebtoken": "^9.0.1"
-=======
   "name": "tech-matchup-app",
   "version": "1.0.0",
   "description": "",
@@ -38,6 +36,5 @@
   },
   "dependencies": {
     "start": "^5.1.0"
->>>>>>> 59094b52bb43368dc5261d68c1c192c17de4aa6b
   }
 }
