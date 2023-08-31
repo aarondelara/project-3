@@ -1,23 +1,19 @@
-const { Schema, model } = require('mongoose');
-const billsSchema = require('../schemas/expenseSchema')
-const Budget = model('Budget', budgetSchema);
+// const { Schema, model } = require('mongoose');
+// const billsSchema = require('../schemas/expenseSchema')
 
-module.exports = Budget;
-const expenseSchema = require('./expenseSchema')
+// const budgetSchema = new Schema({
+//   income: {
+//     type: Number,
+//     percision: 2,
+//     required: true,
+//   },
+//   expenses: [billsSchema], 
 
-const budgetSchema = new Schema({
-  income: {
-    type: Number,
-    percision: 2,
-    required: true,
-  },
-  expenses: [billsSchema], 
+// },
+// {
+//     timestamps: true
+// });
 
-},
-{
-    timestamps: true
-});
+// const Budget = model("Budget", budgetSchema)
 
-const Budget = model("Budget", budgetSchema)
-
-module.exports = Budget
+// module.exports = Budget
