@@ -1,4 +1,11 @@
 {
+<<<<<<< HEAD
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/joy": "^5.0.0-beta.3",
+    "react-router-dom": "^6.15.0"
+=======
   "name": "tech-matchup-app",
   "version": "1.0.0",
   "description": "",
@@ -17,5 +24,6 @@
   },
   "dependencies": {
     "start": "^5.1.0"
+>>>>>>> 797d1c29d4b7d3d3fd728f87f38639c9a5558a35
   }
 }
