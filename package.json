@@ -17,7 +17,7 @@
     "concurrently": "^8.2.1"
   },
   "dependencies": {
-    "jsonwebtoken": "^9.0.1"
+    "jsonwebtoken": "^9.0.1",
   "name": "tech-matchup-app",
   "version": "1.0.0",
   "description": "",
@@ -37,4 +37,4 @@
   "dependencies": {
     "start": "^5.1.0"
   }
-}
+}}
