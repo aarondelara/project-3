@@ -1,19 +1,21 @@
 const express = require('express');
-const { MoneymanServer } = require('');
+const { ApolloServer } = require('apollo-server-express')
 const path = require('path');
-const { MoneyMiddleware } = require('./utils/auth');
+const { moneyMiddleware } = require('./utils/auth');
 
-const { typeDefs, resolbers } = require('./schemas');
+const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connections')
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-const server = new MoneymanServer({
+const server = new ApolloServer({
     typeDefs,
-    resolbers,
-    context: MoneyMiddleware,
+    resolvers,
+    //context:authMiddleware,
+    context: moneyMiddleware,
 });
-
+//Mern min project
+//
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 

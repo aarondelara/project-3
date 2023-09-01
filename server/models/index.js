@@ -1,5 +1,5 @@
-const Budget = require('./Budget')
+const Budget = require('./bills')
 const User = require('./User')
 
 
-module.exports = { Bills, User }
+module.exports = { Budget, User }
