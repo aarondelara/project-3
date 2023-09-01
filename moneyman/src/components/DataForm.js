@@ -4,15 +4,36 @@ function DataForm() {
     const [dataInput, setDataInput] = useState('');
 
     const handlePostData = () => {
-        // Send data to the server
-        // Handle data posting
+
+        const postData = {
+            data: dataInput
+        };
+
+        sendDataToServer(postData)
+            .then(response => {
+
+                console.log('Data posted successfully:', response);
+            })
+            .catch(error => {
+                console.error('Error posting data:', error);
+            });
     };
 
     return (
         <div>
             <h2>Data Form</h2>
-            {/* Form for data input */}
-            <button onClick={handlePostData}>Post Data</button>
+            <form>
+                <label htmlFor="dataInput">Enter Data:</label>
+                <textarea
+                    id="dataInput"
+                    value={dataInput}
+                    onChange={e => setDataInput(e.target.value)}
+                />
+
+                <button type="button" onClick={handlePostData}>
+                    Post Data
+                </button>
+            </form>
         </div>
     );
 }
