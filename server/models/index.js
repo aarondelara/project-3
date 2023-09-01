@@ -1,4 +1,4 @@
-const Bills = require('./bills')
+const Budget = require('./Budget')
 const User = require('./User')
 
 

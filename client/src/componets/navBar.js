@@ -3,21 +3,16 @@ import { Link } from "react-router-dom";
 
 const navBar = () => {
     return (
-        <div>
-            <li>
-                <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="/    ">    </Link>
-            </li>
-            <li>
-                <Link to="/   ">    </Link>
-            </li>
-            <li>
-                <Link to="/    ">    </Link>
-            </li>
-        </div>
-    );
-};
+        <nav>
+            <Link to="/signup">
+                Sign up &nbsp;  &nbsp;  &nbsp;  &nbsp;
+            </Link>
+            <Link to="/home">
+                Home &nbsp;  &nbsp;  &nbsp;  &nbsp;
+            </Link>
+        </nav>
+    )
+
+}
 
 export default navBar;
