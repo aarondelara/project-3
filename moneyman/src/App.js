@@ -1,7 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import Nav from './components/nav'
+import {useState} from 'react';
+import Calendar from 'react-calendar'; 
+import './App.css';
+import 'react-calendar/dist/Calendar.css'
+import Calendar from 'react-calendar'
 
+import "./styles.css";
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Money Man</h1>
+  );
+}
 
 function App() {
   return (
@@ -65,7 +78,7 @@ function App() {
 
   useEffect(() => {
     // Make an API call to fetch data from the backend
-    axios.get('http://localhost:3001/')
+    axios.get('http://localhost:/')
       .then(response => {
         setData(response.data);
       })
@@ -85,3 +98,25 @@ function App() {
 }
 
 export default App;
+
+function App() {
+  const [date, setDate] = useState(new Date())
+ 
+ 
+ 
+ return (
+  <div className="app">
+    <h1 className="header">React Calendar</h1>
+    <div className="calendar-container">
+      <Calendar onChange={setDate} value={date}/>
+    </div>
+    <div className="text-center">
+       Selected date: {date.toDateString()}
+    </div>
+  </div>
+   )
+ 
+ }
+ 
+ export default App;
+
