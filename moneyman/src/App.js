@@ -78,7 +78,7 @@ function App() {
 
   useEffect(() => {
     // Make an API call to fetch data from the backend
-    axios.get('http://localhost:/')
+    axios.get('http://localhost:3000/')
       .then(response => {
         setData(response.data);
       })
@@ -116,7 +116,6 @@ function App() {
   </div>
    )
  
- }
+{'}'}
  
  export default App;
-
